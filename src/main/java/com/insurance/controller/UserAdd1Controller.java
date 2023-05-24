@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.insurance.model.NomineeAdd;
-import com.insurance.model.UserAdd;
+import com.insurance.model.UserAdd1;
 import com.insurance.service.NomineeAddService;
-import com.insurance.service.UserAddService;
+import com.insurance.service.UserAdd1Service;
 
 /*
  * Task 167 Design Service to add user with multiple nominee details into system
@@ -22,16 +22,16 @@ import com.insurance.service.UserAddService;
 
 @RestController
 
-public class UserAddController {
+public class UserAdd1Controller {
 	@Autowired
-	private UserAddService userAddService;
+	private UserAdd1Service userAddService;
 	@Autowired
 	private NomineeAddService nomineeAddservice;
 
 	@PostMapping("/saveNomineeData")
-	public UserAdd saveUserAdd(@RequestBody UserAdd userAdd) {
+	public UserAdd1 saveUserAdd(@RequestBody UserAdd1 userAdd) {
 
-		UserAdd userAdd1 = userAddService.saveUserAdd(userAdd);
+		UserAdd1 userAdd1 = userAddService.saveUserAdd(userAdd);
 		List<NomineeAdd> nominee2 = userAdd.getNominees();
 		for (NomineeAdd nomineee : nominee2) {
 			nomineee.setUserAddId(userAdd.getId());

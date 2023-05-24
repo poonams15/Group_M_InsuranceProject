@@ -13,7 +13,7 @@ import com.insurance.model.PolicyScheduleAdd;
 import com.insurance.service.PolicyScheduleAddService;
 
 @RestController
-public class PolicyScheduleAddController {
+public class PolicyScheduleAdd1Controller {
 	@Autowired
 	private PolicyScheduleAddService policyScheduleService;
 

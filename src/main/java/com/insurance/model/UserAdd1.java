@@ -24,7 +24,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "useradd1")
-public class UserAdd {
+public class UserAdd1 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;

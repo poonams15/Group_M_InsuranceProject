@@ -1,15 +1,15 @@
 package com.insurance.serviceimpl;
 
-/*
- * task 138 Build the Restful API to delete the user details from database
- * @author by swati kothawal
- */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.insurance.repository.UserDetailsDeleteRepository;
 import com.insurance.service.UserDeleteService;
 
+/*
+ * task 138 Build the Restful API to delete the user details from database
+ * @author by swati kothawal
+ */
 @Service
 public class UserDeleteServiceImpl implements UserDeleteService {
 //inject the repository service

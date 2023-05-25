@@ -1,9 +1,5 @@
 package com.insurance.model;
 
-/*
- * task 138 Build the Restful API to delete the user details from database
- * @author by swati kothawal
- */
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -12,6 +8,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*
+ * task 138 Build the Restful API to delete the user details from database
+ * @author by swati kothawal
+ */
 @Entity
 @Table(name = "userdetailsdelete")
 public class UserDetailsDelete {
